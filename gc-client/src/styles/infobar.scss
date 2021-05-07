@@ -1,0 +1,40 @@
+.bottomBarContainer{
+    background-color: $eerieblack;    
+    height: 35vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+
+    .infoBarContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 85%;
+
+
+        .linksContainer{
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            justify-content: space-evenly;
+
+            .links{
+                font-family: $opensans;
+                color: $white;
+                letter-spacing: 0.05em;
+            }
+        }
+
+        .IconsContainer{
+            width: 30%;
+        }
+    }
+
+    .copyrightContainer{
+        height: 10%;
+        font-family: $opensans;
+        color: $white;
+        letter-spacing: 0.05em;
+    }
+}

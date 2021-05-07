@@ -5,7 +5,6 @@ class Home extends Component {
     render(){
         return (
             <div className="homeBlock">
-                <h1> Home Page </h1>
                 <div className="topContainer">
                     <div className="slantContentContainer">
                         <div className="orangeBox"></div>
@@ -20,7 +19,8 @@ class Home extends Component {
                             </div>
                             <div className="homeTextContainer">
                                 <div className="headerText">
-
+                                    <p><b>Gift Card Solutions</b></p>
+                                    <p>for your Business</p>
                                 </div>
                                 <div className="infoText">
                                     <p></p>

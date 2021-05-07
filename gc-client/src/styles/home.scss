@@ -1,24 +1,61 @@
+@import "./variables.scss";
+
 .homeBlock{
-    background-color: aqua;
+    background-color: transparent;
     display: flex;
+    flex-direction: column;
+    
 
     .topContainer{
+        height: 90vh;
+        width: 100vw;
 
-        .orangeBox{
+        .slantContentContainer{
+            z-index: 2;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: aqua;
 
+            .orangeBox{
+                background-color: $radialOrangeIn;
+                position: absolute;
+                transform: rotate(-15deg);
+                border-radius: 30px;
+                left: -20%;
+                top: 30%;
+            }
+
+            .videoContainer{
+                background-color: $radialOrangeIn;
+                transform: rotate(-15deg);
+            }
         }
 
-        .videoContainer{
+        .introTextContainer{
+            z-index: 1;
 
         }
 
     }
 
     .middleContainer{
+        background-color: yellow;
+        display: flex;
+        height: 90vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
 
     }
 
     .lastContainer{
+        background-color: yellowgreen;
+        display: flex;
+        height: 90vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
 
     }
 }
