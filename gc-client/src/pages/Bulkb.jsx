@@ -4,7 +4,9 @@ class Bulkb extends Component {
     render(){
         return (
             <div className="bbBlock">
-                <h1> Bulk Buy Page </h1>
+                <div className="topContainer"> Top Container</div>
+                <div className="middleContainer"> Middle Container </div>
+                <div className="bottomContainer"> Bottom Container </div>
             </div>
         )
 

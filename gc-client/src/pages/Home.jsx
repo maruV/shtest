@@ -2,6 +2,11 @@ import React, {Component} from 'react';
 
 import bulkicon from "../assets/bulkicon.png";
 
+import Discount from "../assets/discountlogo.png";
+import Safety from "../assets/safetylogo.png";
+import Delivery from "../assets/instantdelivery.png";
+import B2b from "../assets/b2b.png";
+
 class Home extends Component {
     render(){
         return (
@@ -49,10 +54,26 @@ class Home extends Component {
                             <p><b>Peace of Mind</b> with every bulk purchase...</p>
                         </div>
                         <div className="featuresContainer">
-                            <div><p>Huge Discounts</p></div>
-                            <div><p>Safe and Secure</p></div>
-                            <div><p>Instant Delivery</p></div>
-                            <div><p>B2B Specialists</p></div>
+                            <div className="feature">
+                                <div className="iconWrapper"><img src={Discount}/></div>
+                                <div className="headerWrapper"><p> Huge Discounts </p></div>
+                                <div className="textWrapper"><p> Lorem Ipsum </p></div>
+                            </div>
+                            <div className="feature">
+                                <div className="iconWrapper"><img src={Safety}/></div>
+                                <div className="headerWrapper"><p> Safe and Secure </p></div>
+                                <div className="textWrapper"><p> Lorem Ipsum </p></div>
+                            </div>
+                            <div className="feature">
+                                <div className="iconWrapper"><img src={Delivery}/></div>
+                                <div className="headerWrapper"><p> Instant Delivery </p></div>
+                                <div className="textWrapper"><p> Lorem Ipsum </p></div>
+                            </div>
+                            <div className="feature">
+                                <div className="iconWrapper"><img src={B2b}/></div>
+                                <div className="headerWrapper"><p> B2B Specialists </p></div>
+                                <div className="textWrapper"><p> Lorem Ipsum </p></div>
+                            </div>
                         </div>
                     </div>
                 </div>
