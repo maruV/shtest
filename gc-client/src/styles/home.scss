@@ -200,9 +200,9 @@
                     position: absolute;
                     z-index: -1;
                     right: 0;
-                    top: 40vh;
+                    top: 45vh;
                     height: 15vh;
-                    width: 10vw;
+                    width: 7vw;
 
                     > img{
                         object-fit: contain;
@@ -213,7 +213,7 @@
                 .wrapper2{
                     position: absolute;
                     z-index: -1;
-                    right: 9vw;
+                    right: 6vw;
                     top: 60vh;
                     height: 8vh;
                     width: 4vw;
@@ -229,7 +229,7 @@
                 .wrapper3{
                     position: absolute;
                     z-index: -1;
-                    right: 5vw;
+                    right: 3vw;
                     top: 65vh;
                     height: 2.5vh;
                     width: 2vw;
@@ -418,11 +418,182 @@
 
     .lastContainer{
         display: flex;
-        height: 90vh;
+        height: 150vh;
         width: 100vw;
-        justify-content: center;
-        align-items: center;
         background-color: $white;
+        flex-direction: row;
 
+        .reviewsBox{
+            height: 35vh;
+            width: 100vw;
+
+            .reviewtitleContainer{
+
+                > r1{
+
+                }
+
+                > r2 {
+
+                }
+            }
+
+            .reviewsContainer{
+
+
+                .review{
+
+                    .starimgWrapper{
+
+                        > img{
+
+                        }
+                    }
+
+                    .mainText{
+
+                    }
+
+                    .boilerText{
+
+                    }
+                }
+
+            }
+        }
+
+        .brandsContainer{
+            height: 57vh;
+            width: 100vw;
+
+            .brandsleft{
+
+
+                .brandsImageWrapper{
+
+
+                    > img{
+
+                    }
+                }
+            }
+
+            .brandsRight{
+
+
+                .firstLine{
+
+
+                    .bulkImgWrapper{
+
+                        > img{
+
+                        }
+                    }
+
+                    .bulkText{
+
+                    }
+                }
+
+                .secondLine{
+
+                    > p{
+
+                    }
+                }
+
+                .thirdLines{
+
+                    > p{
+
+                    }
+                }
+
+                .htbWrapper{
+
+
+                    > img{
+
+                    }
+                }
+            }
+        }
+        
+        .sellBox{
+            height: 57vh;
+            width: 100vw;
+
+            .sellOrangeWrapper{
+
+
+                > img{
+
+                }
+            }
+
+            .sboxLeftContainer{
+
+
+                .sbfirstLine{
+
+
+                    .selliconWrapper{
+
+
+                        > img{
+
+                        }
+                    }
+
+                    .sellTxt{
+
+
+                        > p{
+
+                        }
+                    }
+                }
+
+                .sbsecondLine{
+                    
+                    > sb1{
+
+                    }
+
+                    > sb2{
+
+                    }
+                }
+
+                .sbthirdLine{
+                    
+
+                    > p{
+
+                    }
+                }
+
+                .sbIconWrapper{
+                    
+                
+                    > img{
+
+                    }
+                }
+            }
+
+            .sboxRightContainer{
+
+
+                .sellImageWrapper{
+
+
+                    > img{
+
+                    }
+                }
+            }
+        }
     }
 }

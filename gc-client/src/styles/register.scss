@@ -1,0 +1,19 @@
+.registerBlock{
+    width: 100vw;
+    height: 180vh;
+    background: linear-gradient(90deg, #F86E0B 0%, #FB8939 50.21%, #F86E0C 100%);
+    display: flex;
+    flex-direction: row;
+
+    .leftBlock{
+        width: 60vw;
+        height: 180vh;
+
+    }
+
+    .rightBlock{
+        width: 40vw;
+        height: 80vh;
+
+    }
+}

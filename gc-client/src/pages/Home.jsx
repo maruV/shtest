@@ -3,12 +3,18 @@ import React, {Component} from 'react';
 import CutEllipse from "../assets/cutellipse.png";
 import Ellipse from "../assets/fullellipse.png";
 import Shadow from "../assets/pictures/shadow.png";
+import Star from "../assets/stars.png";
+import Leftlady from "../assets/pictures/leftlady.png";
+import Bulkblack from "../assets/bulkblack.png"; 
+import Salesguy from "../assets/pictures/salesguy.png";
 
 import homeright from "../assets/pictures/homemainright.png";
 import homeleft from "../assets/pictures/homemainleft.png";
-import Homemiddle from "../assets/pictures/homemiddle.png"
+import Homemiddle from "../assets/pictures/homemiddle.png";
+import SellOrange from "../assets/pictures/homebottomleft.png";
 
 import bulkicon from "../assets/bulkicon.png";
+import Sell from "../assets/sellinglogo.png";
 import Discount from "../assets/discountlogo.png";
 import Safety from "../assets/safetylogo.png";
 import Delivery from "../assets/instantdelivery.png";
@@ -127,7 +133,132 @@ class Home extends Component {
                     </div>
                 </div>
 
-                <div className="lastContainer">Last Container</div>
+                <div className="lastContainer">
+
+                    <div className="reviewsBox">
+
+                        <div className="reviewtitleContainer">
+                            <p id="r1">
+                                Don't just taker our word for it
+                            </p>
+                            <p id="r2">
+                                here's what our loyal customers say...
+                            </p>
+                        </div>
+
+                        <div className="reviewsContainer">
+
+                            <div className="review">
+                                <div className="starimgWrapper">
+                                    <img src={Star}/>
+                                </div>
+                                <div className="mainText">
+                                    <p> Review Heading </p>
+                                </div>
+                                <div className="boilerText">
+                                    <p> lorem ipsum </p>
+                                </div>
+                            </div>
+
+                            <div className="review">
+                                <div className="starimgWrapper">
+                                    <img src={Star}/>
+                                </div>
+                                <div className="mainText">
+                                    <p> Review Heading </p>
+                                </div>
+                                <div className="boilerText">
+                                    <p> lorem ipsum </p>
+                                </div>
+                            </div>
+
+                            <div className="review">
+                                <div className="starimgWrapper">
+                                    <img src={Star}/>
+                                </div>
+                                <div className="mainText">
+                                    <p> Review Heading </p>
+                                </div>
+                                <div className="boilerText">
+                                    <p> lorem ipsum </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="brandsContainer">
+                        <div className="brandsLeft">
+                            <div className="brandsImageWrapper">
+                                <img src={Leftlady} />
+                            </div>
+                        </div>
+
+                        <div className="brandsRight">
+                            <div className="firstLine">
+                                <div className="bulkImgWrapper">
+                                    <img src ={Bulkblack} />
+                                </div>
+                                <div className="bulkText">
+                                    <p> Bulk Buy Gift Cards </p>
+                                </div>
+                            </div>
+                            
+                            <div className="secondLine">
+                                <p> 1000s of brands for You</p>
+                            </div>
+
+                            <div className="thirdLines">
+                                <p> Cras mattis consectetur purus sit </p>
+                                <p> amet fermentum. Etiam porta sem </p>
+                                <p> malesuada magna mollis euismod.</p>
+                            </div>
+
+                            <div className="htbWrapper">
+                                <button> HOW TO BUY </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="sellBox">
+
+                            <div className="sellOrangeWrapper">
+                                <img src={SellOrange} />
+                                This is sell OrangeBox
+                            </div>
+
+                        <div className="sboxLeftContainer">
+                            <div className="sbfirstline">
+                                <div className="selliconWrapper">
+                                    <img src={Sell} />
+                                </div>
+                                <div className="sellTxt">
+                                    <p> Sell Gift Cards </p>
+                                </div>
+                            </div>
+                        
+                            <div className="sbsecondLine">
+                                <p id ="sb1"> Have stock you </p>
+                                <p id="sb2"> need to sell? </p>
+                            </div>
+
+                            <div className="sbthirdLine">
+                                <p> Cras mattis consectetur purus sit </p>
+                                <p> amet fermentum. Etiam porta sem </p>
+                                <p> malesuada magna mollis euismod.</p>
+                            </div>
+
+                            <div className="sbIconWrapper">
+                                <button> HOW TO SELL </button>
+                            </div>
+                        </div>
+
+                        <div className="sboxRightContainer">
+                            <div className="sellImageWrapper">
+                                <img src={Salesguy} /> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
 
