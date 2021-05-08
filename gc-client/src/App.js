@@ -8,7 +8,7 @@ import Register from './pages/Register';
 import Navbar from './components/Navbar';
 import BottomInfoBar from './components/BottomInfoBar';
 
-import './App.css';
+import './styles/styles.scss';
 
 function App() {
   return (

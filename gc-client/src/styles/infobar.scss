@@ -23,18 +23,70 @@
                 font-family: $opensans;
                 color: $white;
                 letter-spacing: 0.05em;
+
+                .header{
+                    display: flex;
+                    align-items: flex-end;
+                    height: 8vh;
+                    font-weight: bold;
+                    font-size: medium;
+                    letter-spacing: 0.1rem;
+                }
+
+                .content{
+                    font-size: small;
+
+                    >p{
+                        cursor: pointer;
+                    }
+                }
+
+                .content2{
+                    font-size: small;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    
+                }
             }
         }
 
         .IconsContainer{
-            width: 30%;
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+
+            .logoscontainer{
+                width: 10vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: flex-end;
+                height: 8vh;
+
+                .logocontainer{
+                    display: flex;
+                    width: 3vw;
+                    height: 3vh;
+
+                    > img{
+                        cursor: pointer;
+                    }   
+                }
+            }
         }
     }
 
     .copyrightContainer{
-        height: 10%;
+        height: 6vh;
         font-family: $opensans;
         color: $white;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.1em;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
     }
 }

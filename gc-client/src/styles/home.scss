@@ -4,7 +4,6 @@
     background-color: transparent;
     display: flex;
     flex-direction: column;
-    
 
     .topContainer{
         height: 90vh;
@@ -13,26 +12,56 @@
 
         .slantContentContainer{
             position: absolute;
-            z-index: -3;
+            z-index: -2;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            width: 100%;
-            height: 60%;
-            background-color: blue;
+            width: 100vw;
+            height: 60vh;
+            background-color: transparent;
 
             .orangeBox{
-                background-color: $radialOrangeIn;
                 position: absolute;
-                transform: rotate(-15deg);
-                border-radius: 30px;
-                left: -20%;
-                top: 30%;
+                z-index: -2;
+                width: 60vw;
+                height: 105vh;
+                display: flex;
+                justify-content: flex-start;
+                margin: 0;
+                padding: 0;
+                left: -2vw;
+                top:-20vh;
+                background-color: transparent;
+
+                > img{
+                    object-fit: contain;
+                    height: auto;
+                    width: auto;
+                    margin: 0;
+                    padding: 0;
+                }
             }
 
             .videoContainer{
-                background-color: $radialOrangeIn;
-                transform: rotate(-15deg);
+                display: flex;
+                width: 50vw;
+                height: 70vh;
+                justify-content: flex-end;
+                align-items: flex-end;
+                position: absolute;
+                z-index: -1;
+                right: -2vw;
+                top: -2vh;
+                margin: 0;
+                padding: 0;
+                background-color: transparent;
+
+                > img{
+                    object-fit: contain;
+                    height: 100%;
+                    width: auto;
+                    margin: 0;
+                    padding: 0;
+                }
             }
         }
 
@@ -45,7 +74,7 @@
             .leftContainer{
                 width: 50vw;
                 padding-left: 5vw;
-                height: 60vh;
+                height: 70vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -146,66 +175,254 @@
                         height: 6vh;
                         width: 12vw;
                         margin-right: 1vw;
+                        cursor: pointer;
                     }
 
                     #b2{
                         background-color: transparent;
                         border-color: $white;
                         border-radius: 10em;
+                        border-style: solid;
                         color: $white;
                         height: 6vh;
                         width: 12vw;
+                        cursor: pointer;
                     }
                 }
             }
 
             .rightContainer{
                 width: 50vw;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: flex-end;
+                height: 80vh;
+                background-color: transparent;
 
+                .wrapper1{
+                    position: absolute;
+                    z-index: -1;
+                    right: 0;
+                    top: 40vh;
+                    height: 15vh;
+                    width: 10vw;
+
+                    > img{
+                        object-fit: contain;
+                        width: 100%;
+                    }
+                }
+
+                .wrapper2{
+                    position: absolute;
+                    z-index: -1;
+                    right: 9vw;
+                    top: 60vh;
+                    height: 8vh;
+                    width: 4vw;
+
+                    > img{
+                        object-fit: contain;
+                        height: fit-content;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .wrapper3{
+                    position: absolute;
+                    z-index: -1;
+                    right: 5vw;
+                    top: 65vh;
+                    height: 2.5vh;
+                    width: 2vw;
+
+                    > img{
+                        object-fit: contain;
+                        height: fit-content;
+                        width: 100%;
+                    }
+                }
             }
         }
 
         .bottomTextContainer{
             width: 100vw;
-            height: 25%;
+            height: 30vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            position: absolute;
+            z-index: -3;
+            background-color: $white;
+            border-radius: 0 0 3rem 3rem;
 
             .catchphraseContainer{
-
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: $opensans;
+                font-size: xx-large;
+                color: $eerieblack;
             }
 
             .featuresContainer{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
+
+                .feature{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    font-family: $opensans;
+
+                    .iconWrapper{
+                        height: 5vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        > img{
+                            object-fit: contain;
+                        }
+                    }
+
+                    .headerWrapper{
+                        height: 3vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: medium;
+                        font-weight: bold;
+                    }
+
+                    .textWrapper{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: small;
+                        height: 3vh;
+                    }
+                }
             }
         }
 
     }
 
     .middleContainer{
-        background-color: yellow;
+        background-color: transparent;
         display: flex;
         height: 90vh;
         width: 100vw;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+
+        .midImageWrapper{
+            height: 45vh;
+            width: 100vw;
+
+            > img{
+                width: 100%;
+                height: auto;
+                position: relative;
+                top: -40%;
+                z-index: -4;
+                border-bottom-left-radius: 5vh;
+                border-bottom-right-radius: 5vh;
+            }
+        }
+
+        .purpleContainer{
+            background: linear-gradient(90deg, #210042 0%, #431175 50.21%, #210042 100%);
+            height: 45vh;
+            width: 100vw;
+            border-radius: 5vh;
+
+            .headerContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 12vh;
+                font-family: $opensans;
+                font-size: 1.5rem;
+                line-height: 4vh;
+                color: $white;
+                letter-spacing: 0.1rem;
+
+                > p{
+                    margin: 0;
+                }
+            }
+
+            .componentContainer{
+                height: 33vh;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .categoryContainer{
+                    height: 5vh;
+                    width: 60vw;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+
+                    .title {
+                        width: 7vw;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .b1{
+                            color: $white;
+                            font-family: $opensans;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            background-color: transparent;
+                            border-style: none;
+
+                            &:after{
+                                background-color: red;
+                                color: red;
+                            }
+                        }
+                        
+                        
+                        
+                    }
+                }
+
+                .shadowContainer{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100vw;
+
+                    > img{
+                        width:40%;
+                        object-fit: contain;
+                    }
+                }
+
+                .optionsContainer{
+                    width: 100vw;
+                    height: 28vh;
+                }
+            }
+        }
 
     }
 
     .lastContainer{
-        background-color: yellowgreen;
         display: flex;
         height: 90vh;
         width: 100vw;
         justify-content: center;
         align-items: center;
+        background-color: $white;
 
     }
 }
