@@ -5,14 +5,446 @@
     display: flex;
     flex-direction: row;
 
-    .leftBlock{
-        width: 60vw;
-        height: 180vh;
+    .mainlabel{
+        color: $white;
+        font-size: 1.1rem;
+    }
 
+    .mainInput{
+        width: 26vw;
+    }
+
+    .leftBlock{
+        width: 65vw;
+        height: 180vh;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .formContainer{
+            width: 30vw;
+            background-color: #F86E0C;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            .titleText{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: pink;
+                height: 7vh;
+
+                > p{
+                    color: $white;
+                    letter-spacing: 0.08rem;
+                    font-size: 1.5rem;
+                    font-weight: lighter;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            
+            .underText{
+
+                > p{
+                    color: $white;
+                    letter-spacing: 0.08rem;
+                    font-size: 0.9rem;
+                    font-weight: lighter;
+                    margin: 0;
+                    padding: 0;
+                }
+
+            }
+
+            .selectAcContainer{
+                display: flex;
+                flex-direction: row;
+                background-color: brown;
+                height: 5vh;
+                justify-content: center;
+                align-items: center;
+                color: $white;
+
+                .aformContainer{
+
+                
+                    #accButton{
+                        color: #F86E0B;
+                        background: red;
+                    }
+
+                    #accLabels{
+                        font-size: 0.9rem;
+                        letter-spacing: 0.05rem;
+                    }
+                }
+
+            }
+            
+            .namesContainer{
+                height: 15vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .nameContainer{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .namelabelContainer{
+
+                        
+                    }
+
+                    .nameinputContainer{
+
+                        
+                    }
+                }
+
+
+            }
+
+            .emailContainer{
+
+                .emaillabel{
+
+                    > p{
+
+                    }
+                }
+
+                .emailinput{
+
+                    #email{
+
+                    }
+                }
+            }
+
+            .phoneContainer{
+
+                .phnlabel{
+
+                    > p{
+
+                    }
+                }
+
+                .phoneDropdown{
+
+
+                    .extensions{
+
+                        > select{
+
+                            > option{
+
+                            }
+                        }
+                    }
+
+                    .phoneNoinput{
+
+                        #phone{
+
+                        }
+                    }
+                }
+            }
+
+            .mobileContainer{
+
+                .molabel{
+
+                    > p{
+
+                    }
+                }
+
+                .mobileDropdown{
+
+                    .mobileExtensions{
+
+                    }
+
+                    .mobileNoInput{
+
+                        #mobile{
+
+                        }
+                    }
+                }
+            }
+
+            .birthDate{
+
+                .birthabel{
+
+                }
+
+                .daySelector{
+
+                    >select{
+
+                        > option{
+
+                        }
+                    }
+                }
+
+                .monthSelector{
+
+                    >select{
+
+                        > option{
+                            
+                        }
+                    }
+                }
+
+                .yearSelector{
+
+                    >select{
+
+                        > option{
+                            
+                        }
+                    }
+                }
+
+            }
+
+            .passwordContainer{
+
+                .plabel1{
+
+                    > p{
+
+                    }
+                }
+
+                .pinputContainer{
+
+                    #password{
+
+                    }
+                }
+            }
+
+            .passwordContainer2{
+
+                .plabel2{
+
+                    > p{
+
+                    }
+                }
+
+                .cpinputContainer{
+
+                    #confirmpassword{
+                        
+                    }
+                }
+            }
+
+            .cnameContainer{
+                
+                .cnamelabel{
+
+                    > p{
+
+                    }
+                }
+
+                .cnameinputContainer{
+
+
+                    #cname{
+                        
+                    }
+                }
+            }
+
+            .cnumberContainer{
+                
+                .cnumberlabel{
+
+                    > p{
+
+                    }
+                }
+
+                .cnumberinputContainer{
+
+
+                    #cnumber{
+                        
+                    }
+                }
+            }
+
+            .a1Container{
+
+                .alabels{
+
+                    > p{
+
+                    }
+                }
+
+                .a1label{
+
+                    > p{
+
+                    }
+                }
+
+                .a1inputContainer{
+
+
+                    #a1{
+
+                    }
+                }
+            }
+
+            .a2Container{
+
+
+                .a2label{
+
+                }
+
+                .a2inputContainer{
+
+                    #a2{
+
+                    }
+                }
+            }
+
+            .cityContainer{
+
+
+                .citylabel{
+
+                    #lcity{
+
+                    }
+                }
+
+                .cityinputContainer{
+
+                    #city{
+
+                    }
+                }
+            }
+
+            .spContainer{
+
+                .splabelContainer{
+
+                    #splabel{
+
+                    }
+                }
+
+                .spinputContainer{
+
+                    #state{
+
+                    }
+                }
+            }
+
+            .zpContainer{
+
+                .zplabelContainer{
+
+                    #zplabel{
+
+                    }
+                }
+
+                .zpinputContainer{
+
+                    #zp{
+
+                    }
+                }
+            }
+
+            .CountryContainer{
+
+                .countrylabelContainer{
+
+                    #countrylabel{
+
+                    }
+
+                }
+
+                .countryselectContainer{
+
+                }
+            }
+
+            .termsContainer{
+                
+                .termslinkContainer{
+
+                    > p{
+
+                    }
+
+                    > a{
+
+                    }
+                }
+
+                .acceptContainer{
+
+                    .acceptradioContainer{
+
+                        #terms{
+
+                        }
+                    }
+
+                    .accpetlabelContainer{
+
+                        #alabel{
+
+                        }
+                    }
+                }
+            }
+
+            .captchaContainer{
+
+            }
+
+            .finalContainer{
+
+                #submitb{
+
+                }
+            }
+        }
     }
 
     .rightBlock{
-        width: 40vw;
+        width: 35vw;
         height: 80vh;
 
     }

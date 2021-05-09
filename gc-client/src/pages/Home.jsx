@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 import Sellinfo from "../components/Sellinfo";
 
 import CutEllipse from "../assets/cutellipse.png";

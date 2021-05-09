@@ -69,7 +69,7 @@ class Bulkb extends Component {
 
                 <div className="middleContainer"> Middle Container </div>
                
-                <div className="bottomContainer"> 
+                <div className="SellinfoContainer"> 
                     <Sellinfo />
                 </div>
             </div>
