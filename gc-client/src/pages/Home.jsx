@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Sellinfo from "../components/Sellinfo";
 
 import CutEllipse from "../assets/cutellipse.png";
 import Ellipse from "../assets/fullellipse.png";
@@ -6,15 +7,12 @@ import Shadow from "../assets/pictures/shadow.png";
 import Star from "../assets/stars.png";
 import Leftlady from "../assets/pictures/leftlady.png";
 import Bulkblack from "../assets/bulkblack.png"; 
-import Salesguy from "../assets/pictures/salesguy.png";
 
 import homeright from "../assets/pictures/homemainright.png";
 import homeleft from "../assets/pictures/homemainleft.png";
 import Homemiddle from "../assets/pictures/homemiddle.png";
-import SellOrange from "../assets/pictures/homebottomleft.png";
 
 import bulkicon from "../assets/bulkicon.png";
-import Sell from "../assets/sellinglogo.png";
 import Discount from "../assets/discountlogo.png";
 import Safety from "../assets/safetylogo.png";
 import Delivery from "../assets/instantdelivery.png";
@@ -138,12 +136,12 @@ class Home extends Component {
                     <div className="reviewsBox">
 
                         <div className="reviewtitleContainer">
-                            <p id="r1">
-                                Don't just taker our word for it
-                            </p>
-                            <p id="r2">
-                                here's what our loyal customers say...
-                            </p>
+                            <div className="rt1">
+                                <p id="r1"> Don't just take our word for it </p>
+                            </div>
+                            <div className="rt2">
+                                <p id="r2">here's what our loyal customers say...</p>
+                            </div>
                         </div>
 
                         <div className="reviewsContainer">
@@ -153,10 +151,12 @@ class Home extends Component {
                                     <img src={Star}/>
                                 </div>
                                 <div className="mainText">
-                                    <p> Review Heading </p>
+                                    <p> Wow... they have </p>
+                                    <p> everything you could</p>
+                                    <p> need! </p>
                                 </div>
                                 <div className="boilerText">
-                                    <p> lorem ipsum </p>
+                                    <p> Jerry, GiftCards4U </p>
                                 </div>
                             </div>
 
@@ -204,7 +204,8 @@ class Home extends Component {
                             </div>
                             
                             <div className="secondLine">
-                                <p> 1000s of brands for You</p>
+                                <p><b> 1000's of brands </b></p>
+                                <p> ready for You </p>
                             </div>
 
                             <div className="thirdLines">
@@ -219,45 +220,11 @@ class Home extends Component {
                         </div>
                     </div>
 
-                    <div className="sellBox">
+                    
+                </div>
 
-                            <div className="sellOrangeWrapper">
-                                <img src={SellOrange} />
-                                This is sell OrangeBox
-                            </div>
-
-                        <div className="sboxLeftContainer">
-                            <div className="sbfirstline">
-                                <div className="selliconWrapper">
-                                    <img src={Sell} />
-                                </div>
-                                <div className="sellTxt">
-                                    <p> Sell Gift Cards </p>
-                                </div>
-                            </div>
-                        
-                            <div className="sbsecondLine">
-                                <p id ="sb1"> Have stock you </p>
-                                <p id="sb2"> need to sell? </p>
-                            </div>
-
-                            <div className="sbthirdLine">
-                                <p> Cras mattis consectetur purus sit </p>
-                                <p> amet fermentum. Etiam porta sem </p>
-                                <p> malesuada magna mollis euismod.</p>
-                            </div>
-
-                            <div className="sbIconWrapper">
-                                <button> HOW TO SELL </button>
-                            </div>
-                        </div>
-
-                        <div className="sboxRightContainer">
-                            <div className="sellImageWrapper">
-                                <img src={Salesguy} /> 
-                            </div>
-                        </div>
-                    </div>
+                <div className="SellComponentBox">
+                    <Sellinfo />
                 </div>
             </div>
         )

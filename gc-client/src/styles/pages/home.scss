@@ -1,9 +1,12 @@
-@import "./variables.scss";
+@import "../variables.scss";
 
 .homeBlock{
     background-color: transparent;
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    height: 345vh;
+
 
     .topContainer{
         height: 90vh;
@@ -418,43 +421,108 @@
 
     .lastContainer{
         display: flex;
-        height: 150vh;
+        height: 105vh;
         width: 100vw;
         background-color: $white;
-        flex-direction: row;
+        flex-direction: column;
+        background-color: transparent;
 
         .reviewsBox{
             height: 35vh;
             width: 100vw;
+            display: flex;
+            flex-direction: column;
+            background-color: #210042;
 
             .reviewtitleContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+                height: 10vh;
+                background-color: transparent;
 
-                > r1{
+                .rt1{
 
+                    > r1{
+
+                    }
                 }
 
-                > r2 {
+                .rt2 {
+
+                    > r2{
+
+                    }
 
                 }
             }
 
             .reviewsContainer{
-
+                display: flex;
+                width: 100vw;
+                flex-direction: row;
+                justify-content: space-evenly;
 
                 .review{
+                    width: 30vw;
+                    height: 25vh;
+                    background-color: transparent;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
 
                     .starimgWrapper{
+                        width: 30vw;
+                        height: 5vh;
+                        background-color: transparent;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
                         > img{
+                            width: 80%;
 
                         }
                     }
 
                     .mainText{
+                        width: 20vw;
+                        height: 10vh;
+                        object-fit: contain;
+                        background-color: transparent;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        box-sizing: border-box;
+
+                        > p{
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            margin: 0;
+                            padding: 0;
+
+                        }
 
                     }
 
                     .boilerText{
+                        width: 13vw;
+                        height: 5vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        background-color: transparent;
+
+                        > p{
+                            margin: 0;
+                            padding: 0;
+                            font-size: 1.1rem;
+                        }
+
 
                     }
                 }
@@ -463,25 +531,56 @@
         }
 
         .brandsContainer{
-            height: 57vh;
+            height: 70vh;
             width: 100vw;
+            display: flex;
+            flex-direction: row;
+            background-color: transparent;
 
-            .brandsleft{
-
+            .brandsLeft{
+                width: 60vw;
+                height: 60vh;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                background-color: transparent;
 
                 .brandsImageWrapper{
-
+                    width: 60vw;
+                    height: 70vh;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    background-color: transparent;
 
                     > img{
-
+                        padding-left: 5vw;
+                        padding: 0;
+                        border: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: transparent;
+                        object-fit: contain;
                     }
                 }
             }
 
             .brandsRight{
+                width: 40vw;
+                height: 70vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                background-color: transparent;
 
 
                 .firstLine{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    background-color: transparent;
+                    width: 30vw;
 
 
                     .bulkImgWrapper{
@@ -492,108 +591,63 @@
                     }
 
                     .bulkText{
-
+                        padding-left: 1vw;
+                        font-size: 1.5vw;
                     }
                 }
 
                 .secondLine{
+                    height: 10vh;
 
                     > p{
+                        margin: 0;
+                        padding: 0;
+                        font-size: 2.3vw;
+                        font-weight: bold;
+                        letter-spacing: 0.1rem;
 
                     }
                 }
 
                 .thirdLines{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    height: 10vh;
+                    
 
                     > p{
-
+                        padding: 0;
+                        margin: 0;
+                        font-size: 1.5vw;
                     }
                 }
 
                 .htbWrapper{
+                    height: 6vh;
+                    width: 14vw;
+                    background-color: transparent;
 
-
-                    > img{
-
+                    > button{
+                        width: 90%;
+                        height: 90%;
+                        border-radius: 30px;
+                        background-color: transparent;
+                        border-color: black;
+                        border-style: solid;
                     }
                 }
             }
         }
         
-        .sellBox{
-            height: 57vh;
-            width: 100vw;
+        
+    }
 
-            .sellOrangeWrapper{
-
-
-                > img{
-
-                }
-            }
-
-            .sboxLeftContainer{
-
-
-                .sbfirstLine{
-
-
-                    .selliconWrapper{
-
-
-                        > img{
-
-                        }
-                    }
-
-                    .sellTxt{
-
-
-                        > p{
-
-                        }
-                    }
-                }
-
-                .sbsecondLine{
-                    
-                    > sb1{
-
-                    }
-
-                    > sb2{
-
-                    }
-                }
-
-                .sbthirdLine{
-                    
-
-                    > p{
-
-                    }
-                }
-
-                .sbIconWrapper{
-                    
-                
-                    > img{
-
-                    }
-                }
-            }
-
-            .sboxRightContainer{
-
-
-                .sellImageWrapper{
-
-
-                    > img{
-
-                    }
-                }
-            }
-        }
+    .SellComponentBox{
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

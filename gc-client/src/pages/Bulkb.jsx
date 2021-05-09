@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import Sellinfo from "../components/Sellinfo";
+
 import LeftOrange from "../assets/pictures/bbleftorange.png";
 import PurpleStatic from "../assets/pictures/staticpurple.png";
 import Ellipse from "../assets/fullellipse.png";
@@ -66,7 +68,10 @@ class Bulkb extends Component {
                 </div>
 
                 <div className="middleContainer"> Middle Container </div>
-                <div className="bottomContainer"> Bottom Container </div>
+               
+                <div className="bottomContainer"> 
+                    <Sellinfo />
+                </div>
             </div>
         )
 

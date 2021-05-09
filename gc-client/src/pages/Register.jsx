@@ -38,23 +38,23 @@ class Register extends Component {
 
                             <div className="namesContainer">
                                 <div className="fnameContainer">
-                                    <div>
+                                    <div className="fnamelabelContainer">
                                         <label>
                                             First Name*
                                         </label>
                                     </div>
-                                    <div>
+                                    <div className="fnameinputContainer">
                                         <input />
                                     </div>
                                 </div>
 
                                 <div className="lnameContainer">
-                                    <div>
+                                    <div className="lnamelabelContainer">
                                         <label>
                                             Last Name*
                                         </label>
                                     </div>
-                                    <div>
+                                    <div className="lnameinputContainer">
                                         <input />
                                     </div>
                                 </div>
@@ -62,16 +62,16 @@ class Register extends Component {
                             </div>
 
                             <div className="emailContainer">
-                                <div>
+                                <div className="emaillabel">
                                     <p> Email* </p>
                                 </div>
-                                <div>
+                                <div className="emailinput">
                                     <input />
                                 </div>
                             </div>
 
                             <div className="phoneContainer">
-                                <div>
+                                <div className="phnlabel">
                                     <p> Phone number*</p>
                                 </div>
                                 <div className="phoneDropdown">
@@ -82,14 +82,14 @@ class Register extends Component {
                                             <option value='US +1'> US +1 </option>
                                         </select>
                                     </div>
-                                    <div className="phoneNo">
+                                    <div className="phoneNoipnut">
                                         <input />
                                     </div>
                                 </div>
                             </div>
 
                             <div className="mobileContainer">
-                                <div>
+                                <div className="moblabel">
                                     <p> Mobile number*</p>
                                 </div>
                                 <div className="mobileDropdown">
@@ -100,14 +100,14 @@ class Register extends Component {
                                             <option value='US +1'> US +1 </option>
                                         </select>
                                     </div>
-                                    <div className="mobileNo">
+                                    <div className="mobileNoinput">
                                         <input />
                                     </div>
                                 </div>
                             </div>
 
                             <div className="birthDate">
-                                <div> Date of Birth* </div>
+                                <div className="birthlabel"> Date of Birth* </div>
 
                                 <div className="daySelector">
                                     <select value={this.state.birthd}>

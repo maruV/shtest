@@ -1,9 +1,11 @@
-@import "./bulkb.scss";
-@import "./home.scss";
-@import "./navbar.scss";
-@import "./notI.scss";
-@import "./infobar.scss";
-@import "./register.scss";
+@import "./pages/bulkb.scss";
+@import "./pages/home.scss";
+@import "./pages/notI.scss";
+@import "./pages/register.scss";
+
+@import "./components/navbar.scss";
+@import "./components/infobar.scss";
+@import "./components/sellinfo.scss";
 
 @import "./media";
 @import "./typography";
