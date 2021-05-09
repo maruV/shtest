@@ -1,132 +1,128 @@
 .SellinfoContainer{
     display: flex;
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
 
     .sellBox{
-        height: 60vh;
+        height: 70vh;
         width: 100vw;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
-
-        .sellOrangeWrapper{
-            position: absolute;
-            z-index: -5;
-            left: -1vw;
-            top: 280vh;
-            width: 45vw;
-            height: 70vh;
-            background-color: #F76D0B;
-            background: radial-gradient(74.12% 76.27% at 49.96% 48.59%, #F76D0B 24.18%, #FFB079 100%);
-            box-shadow: 0px 0px 75px rgba(248, 110, 11, 0.5), inset 0px 0px 65px #FF6A00;
-            border-radius: 40px;
-            transform: skew(0deg, -2deg);
-        }
+        align-items: flex-end;
 
         .sboxLeftContainer{
             width: 45vw;
-            height: 60vh;
+            height: 55vh;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
             box-sizing: border-box;
+            background: radial-gradient(74.12% 76.27% at 49.96% 48.59%, #F76D0B 24.18%, #FFB079 100%);
+            box-shadow: 0px 0px 75px rgba(248, 110, 11, 0.5), inset 0px 0px 65px #FF6A00;
+            border-top-right-radius: 70px;
+            transform: skew(0, -3deg);
 
-            .sbfirstLine{
-                display: flex;
-                width: 35vw;
-                height: 7vh;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-items: center;
+            .antiskewContainer{
+                transform: skew(0, 3deg);
+                padding-left: 8vw;
 
-                .selliconWrapper{
+                .sbfirstLine{
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 4vw;
-                    height: 5vh;
+                    width: 35vw;
+                    height: 7vh;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: flex-start;
 
-                    > img{
-                        height: 90%;
-                        object-fit: contain;
-                        margin: 0;
-                        padding: 0;
+                    .selliconWrapper{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 4vw;
+                        height: 5vh;
 
+                        > img{
+                            height: 80%;
+                            object-fit: contain;
+                            margin: 0;
+                            padding: 0;
+
+                        }
+                    }
+
+                    .sellTxt{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width: 15vw;
+                        height: 5vh;
+
+                        > p{
+                            font-size: 1.3vw;
+                            letter-spacing: 0.05rem;
+                            color: $white;
+                        }
                     }
                 }
 
-                .sellTxt{
+                .sbsecondLine{
+                    width: 35vw;
+                    height: 15vh;
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
-                    align-items: center;
-                    width: 15vw;
-                    height: 5vh;
+                    align-items: flex-start;
+                    font-size: 3vw;
+                    color: $white;
+
+                    #sb1{
+                        margin: 0;
+                        padding: 0;
+                        font-weight: bold;
+                    }
+
+                    #sb2{
+                        margin: 0;
+                        padding: 0;
+                        font-weight: lighter;
+                    }
+                }
+
+                .sbthirdLine{
+                    width: 35vw;
+                    height: 10vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
 
                     > p{
-                        font-size: 1.8rem;
-                        letter-spacing: 0.05rem;
+                        font-size: 1.2vw;
+                        letter-spacing: 0.08rem;
+                        margin: 0;
+                        padding: 0;
                         color: $white;
                     }
                 }
-            }
 
-            .sbsecondLine{
-                width: 35vw;
-                height: 15vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                font-size: 4rem;
-                color: $white;
-
-                #sb1{
-                    margin: 0;
-                    padding: 0;
-                    font-weight: bold;
-                }
-
-                #sb2{
-                    margin: 0;
-                    padding: 0;
-                    font-weight: lighter;
-                }
-            }
-
-            .sbthirdLine{
-                width: 35vw;
-                height: 10vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                > p{
-                    font-size: 1.8rem;
-                    letter-spacing: 0.08rem;
-                    margin: 0;
-                    padding: 0;
-                    color: $white;
-                }
-            }
-
-            .sbIconWrapper{
-                display: flex;
-                width: 35vw;
-                align-items: center;
-                height: 8vh;
-            
-                > button{
-                    width: 13vw;
-                    height: 6vh;
-                    border-radius: 40px;
-                    background-color: $orange;
-                    border-style: solid;
-                    border-color: $white;
-                    color: $white;
-                    cursor: pointer;
+                .sbbuttonWrapper{
+                    display: flex;
+                    width: 35vw;
+                    align-items: center;
+                    height: 8vh;
+                
+                    #sellB{
+                        width: 13vw;
+                        height: 6vh;
+                        border-radius: 40px;
+                        background-color: transparent;
+                        border-style: solid;
+                        border-color: $white;
+                        color: $white;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -143,15 +139,12 @@
                 justify-content: flex-end;
                 align-items: center;
                 width: 60vw;
-                height: auto;
-                
+                height: 60vh;
+                padding-top: 2vh;
 
                 > img{
-                    object-fit: contain;
-                    z-index: -1;
-                    position: relative;
-                    bottom: -1vh;
-                    right: -1vw;
+                    object-fit: cover;
+                    height: 165%;
                 }
             }
         }

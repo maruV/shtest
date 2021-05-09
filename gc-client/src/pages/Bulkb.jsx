@@ -18,19 +18,7 @@ class Bulkb extends Component {
                     </div>
                     
                     <div className="rightStatic">
-                        <div className="purpleWrapper">
-                            <div className="pline1"> 15% </div>
-                            <div className="pline2"> <p> off all Gift Cards </p></div>
-                            <div className="stImgWrapper">
-                                 < img src={PurpleStatic} /> 
-                            </div>
-                        </div>
-                        <div className="bigEllipseWrapper">
-                            <img src={Ellipse}/>
-                        </div>
-                        <div className="smallEllipseWrapper">
-                            <img src={Ellipse}/>
-                        </div>
+                        <img src={Ladyright} />
                     </div>
 
                     <div className="bbtopleft">
@@ -39,7 +27,7 @@ class Bulkb extends Component {
                                 <div className="bulkIconWrapper"> 
                                     <img src={Bulk} />
                                 </div>
-                                <div className="bulktextWrapper"> Bulk Buy Gift Cards </div>
+                                <div className="bulktextWrapper"><p> Bulk Buy Gift Cards </p></div>
                             </div>
 
                             <div className="bbtext2">
@@ -61,8 +49,13 @@ class Bulkb extends Component {
                     </div>
 
                     <div className="bbtopright">
-                        <div className="rightLadyWrapper">
-                            <img src={Ladyright} />
+                        <div className="purpleWrapper">
+                            <div className="pline1"><p> 15% </p></div>
+                            <div className="pline2"> <p> off all Gift Cards </p></div>
+                        </div>
+                        <div className="bigEllipseWrapper">
+                        </div>
+                        <div className="smallEllipseWrapper">
                         </div>
                     </div>
                 </div>

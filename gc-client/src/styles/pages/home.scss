@@ -331,6 +331,9 @@
                 z-index: -4;
                 border-bottom-left-radius: 5vh;
                 border-bottom-right-radius: 5vh;
+                border-bottom-width: 5vh;
+                border-bottom-color: $white;
+                border-bottom-style: solid;
             }
         }
 
@@ -432,12 +435,12 @@
             width: 100vw;
             display: flex;
             flex-direction: column;
-            background-color: #210042;
+            background-color: $white;
 
             .reviewtitleContainer{
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-end;
                 align-items: center;
                 width: 100vw;
                 height: 10vh;
@@ -445,15 +448,20 @@
 
                 .rt1{
 
-                    > r1{
-
+                    #r1{
+                        font-size: 2vw;
+                        margin: 0;
+                        padding: 0;
                     }
                 }
 
                 .rt2 {
 
-                    > r2{
-
+                    #r2{
+                        font-size: 2vw;
+                        margin: 0;
+                        padding: 0;
+                        font-weight: bold;
                     }
 
                 }
@@ -475,15 +483,16 @@
                     justify-content: center;
 
                     .starimgWrapper{
-                        width: 30vw;
+                        width: 20vw;
                         height: 5vh;
                         background-color: transparent;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        margin: 2vh;
 
                         > img{
-                            width: 80%;
+                            width: 70%;
 
                         }
                     }
@@ -500,7 +509,7 @@
                         box-sizing: border-box;
 
                         > p{
-                            font-size: 1.2rem;
+                            font-size: 1.5vw;
                             font-weight: bold;
                             margin: 0;
                             padding: 0;
@@ -520,7 +529,7 @@
                         > p{
                             margin: 0;
                             padding: 0;
-                            font-size: 1.1rem;
+                            font-size: 1.5vw;
                         }
 
 

@@ -8,23 +8,27 @@
     .mainlabel{
         color: $white;
         font-size: 1.1rem;
+        letter-spacing: 0.05rem;
     }
 
     .mainInput{
-        width: 26vw;
+        width: 22vw;
+        height: 4vh;
+        border-style: none;
+        border-radius: 20px;
     }
 
     .leftBlock{
         width: 65vw;
         height: 180vh;
-        background-color: lightblue;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        z-index: 2;
 
         .formContainer{
             width: 30vw;
-            background-color: #F86E0C;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -34,7 +38,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: pink;
                 height: 7vh;
 
                 > p{
@@ -63,7 +66,6 @@
             .selectAcContainer{
                 display: flex;
                 flex-direction: row;
-                background-color: brown;
                 height: 5vh;
                 justify-content: center;
                 align-items: center;
@@ -74,7 +76,6 @@
                 
                     #accButton{
                         color: #F86E0B;
-                        background: red;
                     }
 
                     #accLabels{
@@ -86,25 +87,41 @@
             }
             
             .namesContainer{
-                height: 15vh;
+                height: 10vh;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-evenly;
+                justify-content: flex-start;
                 align-items: center;
+                width: 30vw;
 
                 .nameContainer{
+                    width: 12vw;
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: flex-start;
                     flex-direction: column;
 
                     .namelabelContainer{
-
+                        height: 4vh;
+                        justify-content: center;
+                        align-items: center;
+                        display: flex;
                         
                     }
 
                     .nameinputContainer{
 
+                        #fname{
+                            height: 4vh;
+                            border-style: none;
+                            border-radius: 20px;
+                        }
+
+                        #lname{
+                            height: 4vh;
+                            border-style: none;
+                            border-radius: 20px;
+                        }
                         
                     }
                 }
@@ -113,13 +130,6 @@
             }
 
             .emailContainer{
-
-                .emaillabel{
-
-                    > p{
-
-                    }
-                }
 
                 .emailinput{
 
@@ -130,20 +140,64 @@
             }
 
             .phoneContainer{
-
-                .phnlabel{
-
-                    > p{
-
-                    }
-                }
+                display: flex;
+                flex-direction: column;
+                width: 30vw;
 
                 .phoneDropdown{
-
+                    display: flex;
+                    flex-direction: row;
+                    width: 30vw;
 
                     .extensions{
+                        display: flex;
+                        width: 6vw;
 
-                        > select{
+                        .dropdown{
+                            border-style: none;
+
+                            .dropdownoption{
+
+                            }
+                        }
+                        
+                    }
+
+                    .phoneNoinput{
+                        display: flex;
+                        width: auto;
+                        width: 15vw;
+
+                        .contactinput{
+                            width: 100%;
+                        }
+
+                        
+                    }
+                }
+            }
+
+            .birthDate{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                .birthabel{
+
+                }
+
+                .dateselectorContainer{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 100%;
+
+                    .daySelector{
+                        width: 20%;
+
+                        >select{
+                            width: 90%;
+                            height: 4vh;
 
                             > option{
 
@@ -151,71 +205,39 @@
                         }
                     }
 
-                    .phoneNoinput{
+                    .monthSelector{
+                        width: 40%;
 
-                        #phone{
+                        >select{
+                            width: 90%;
+                            height: 4vh;
 
+                            > option{
+                                
+                            }
                         }
                     }
-                }
-            }
 
-            .mobileContainer{
+                    .yearSelector{
+                        width: 40%;
 
-                .molabel{
+                        >select{
+                            width: 90%;
+                            height: 4vh;
+                            border-radius: 20px;
+                            border-style: solid;
+                            border-color: $white;
+                            color: $white;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: $orange;
+                            padding: 0 20px 0 20px;
 
-                    > p{
-
-                    }
-                }
-
-                .mobileDropdown{
-
-                    .mobileExtensions{
-
-                    }
-
-                    .mobileNoInput{
-
-                        #mobile{
-
-                        }
-                    }
-                }
-            }
-
-            .birthDate{
-
-                .birthabel{
-
-                }
-
-                .daySelector{
-
-                    >select{
-
-                        > option{
-
-                        }
-                    }
-                }
-
-                .monthSelector{
-
-                    >select{
-
-                        > option{
                             
-                        }
-                    }
-                }
-
-                .yearSelector{
-
-                    >select{
-
-                        > option{
-                            
+                            > option{
+                                
+                            }
                         }
                     }
                 }
@@ -446,6 +468,58 @@
     .rightBlock{
         width: 35vw;
         height: 80vh;
+        padding-top: 15vh;
+        position: relative;
+        z-index: 2;
 
+        .staticloginbox{
+            width: 20vw;
+            height: 35vh;
+            position: absolute;
+            z-index: 2;
+            background: radial-gradient(101.92% 73.78% at 30.14% 67.99%, #210042 0%, #431175 100%);
+            border-radius: 50px;
+        }
+
+        .loginBox{
+            display: flex;
+            width: 20vw;
+            height: 35vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 3;            
+
+            .logText{
+                font-size: 1.6rem;
+                
+                > p{
+                    margin: 0;
+                    padding: 0;
+                    font-weight: bold;
+                    color: $white;
+                }
+            }
+
+            .logbuttContainer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 12vw;
+                height: 10vh;
+
+                > button{
+                    border-style: solid;
+                    border-color: $white;
+                    width: 90%;
+                    height: 55%;
+                    border-radius: 30px;
+                    background-color: transparent;
+                    color: $white;
+                }
+
+            }
+        }
     }
 }
